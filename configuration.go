@@ -28,7 +28,7 @@ func init() {
 }
 
 func Loadsettings(conf *Settings) {
-   file, _ := os.Open("conf.json")
+   file, _ := os.Open("/etc/viral/conf.json")
    decoder := json.NewDecoder(file)
    err := decoder.Decode(&conf)
    if err != nil {
