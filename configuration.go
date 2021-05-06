@@ -13,6 +13,12 @@ type Settings struct {
    DBname string
    DBuser string
    DBpass string
+   SSLCERT string
+   SSLKEY string
+   HTTPPORT string
+   SSLPORT string
+   Programworkingdirectory string
+
 }
 
 var Gdebug bool
